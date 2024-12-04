@@ -8,6 +8,7 @@ import HomeServicesSection from "./Home_Page_Sections/HomeServicesSection";
 import HomeContactUsSection from "./Home_Page_Sections/HomeContactUsSection";
 import HomeTestimonialSection from "./Home_Page_Sections/HomeTestimonialSection";
 import Home_Nearby_Places from "./Home_Page_Sections/Home_Nearby_Places";
+import Home_Places from "./Home_Page_Sections/Home_Places";
 
 const Home = () => {
   return (
@@ -26,6 +27,9 @@ const Home = () => {
       </section>
       <section>
         <HomeLuxuryLiving />
+      </section>
+      <section>
+        <Home_Places/>
       </section>
       <section>
         <HomeServicesSection />
