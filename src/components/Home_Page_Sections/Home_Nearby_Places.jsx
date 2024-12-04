@@ -61,7 +61,7 @@ const Home_Nearby_Places = () => {
   ];
 
   return (
-    <section className="container mx-auto py-10">
+    <section className="container mx-auto">
       {/* Upper Section */}
       <section className="text-center mb-10">
         <div className="flex flex-col justify-center items-center">

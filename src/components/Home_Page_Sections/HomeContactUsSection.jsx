@@ -32,9 +32,9 @@ const HomeContactUsSection = () => {
   };
 
   return (
-    <section className="container mx-auto px-4 py-10 sm:py-16">
+    <section className="container mx-auto px-4">
       {/* Section Heading */}
-      <div className="text-center mb-10">
+      <div className="text-center">
         <h5 className="uppercase font-bold font-montserrat text-[#FEA116] inline-flex items-center gap-2 sm:gap-5 text-sm sm:text-base">
           <span className="hidden sm:inline-block w-10 sm:w-20 border-t-2 border-[#FEA116]"></span>
           Contact Us
