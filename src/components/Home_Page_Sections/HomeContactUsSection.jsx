@@ -32,59 +32,67 @@ const HomeContactUsSection = () => {
   };
 
   return (
-    <section className="container mx-auto py-10">
+    <section className="container mx-auto px-4 py-10 sm:py-16">
       {/* Section Heading */}
       <div className="text-center mb-10">
-        <h5 className="uppercase font-bold font-montserrat text-[#FEA116] inline-flex items-center gap-5">
-          <span className="w-20 border-t-2 border-[#FEA116]"></span>
+        <h5 className="uppercase font-bold font-montserrat text-[#FEA116] inline-flex items-center gap-2 sm:gap-5 text-sm sm:text-base">
+          <span className="hidden sm:inline-block w-10 sm:w-20 border-t-2 border-[#FEA116]"></span>
           Contact Us
-          <span className="w-20 border-t-2 border-[#FEA116]"></span>
+          <span className="hidden sm:inline-block w-10 sm:w-20 border-t-2 border-[#FEA116]"></span>
         </h5>
-        <h1 className="font-bold font-montserrat text-4xl mt-2">
+        <h1 className="font-bold font-montserrat text-2xl sm:text-3xl md:text-4xl mt-2">
           Get in <span className="text-[#FEA116] uppercase">Touch</span>
         </h1>
       </div>
 
       {/* Contact Info Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="flex items-start gap-5 p-5 bg-white shadow-lg rounded-lg transition-all duration-300 hover:shadow-2xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-5 p-4 sm:p-5 bg-white shadow-lg rounded-lg transition-all duration-300 hover:shadow-2xl">
           <FaMapMarkerAlt className="text-3xl text-[#FEA116]" />
-          <div>
-            <h2 className="text-xl font-bold font-montserrat mb-2">Location</h2>
-            <p className="text-gray-600">
+          <div className="text-center sm:text-left">
+            <h2 className="text-lg sm:text-xl font-bold font-montserrat mb-2">
+              Location
+            </h2>
+            <p className="text-gray-600 text-sm sm:text-base">
               No. 9/17, 1st Main Road, Maruthi Nagar, Madivala, Bangalore-560068
             </p>
           </div>
         </div>
-        <div className="flex items-start gap-5 p-5 bg-white shadow-lg rounded-lg transition-all duration-300 hover:shadow-2xl">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-5 p-4 sm:p-5 bg-white shadow-lg rounded-lg transition-all duration-300 hover:shadow-2xl">
           <FaEnvelope className="text-3xl text-[#FEA116]" />
-          <div>
-            <h2 className="text-xl font-bold font-montserrat mb-2">Mail</h2>
-            <p className="text-gray-600">srikrishnastay@gmail.com</p>
+          <div className="text-center sm:text-left">
+            <h2 className="text-lg sm:text-xl font-bold font-montserrat mb-2">
+              Mail
+            </h2>
+            <p className="text-gray-600 text-sm sm:text-base">
+              srikrishnastay@gmail.com
+            </p>
           </div>
         </div>
-        <div className="flex items-start gap-5 p-5 bg-white shadow-lg rounded-lg transition-all duration-300 hover:shadow-2xl">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-5 p-4 sm:p-5 bg-white shadow-lg rounded-lg transition-all duration-300 hover:shadow-2xl">
           <FaPhoneAlt className="text-3xl text-[#FEA116]" />
-          <div>
-            <h2 className="text-xl font-bold font-montserrat mb-2">Mobile</h2>
-            <p className="text-gray-600">9972014954</p>
-            <p className="text-gray-600">9019336365</p>
+          <div className="text-center sm:text-left">
+            <h2 className="text-lg sm:text-xl font-bold font-montserrat mb-2">
+              Mobile
+            </h2>
+            <p className="text-gray-600 text-sm sm:text-base">9972014954</p>
+            <p className="text-gray-600 text-sm sm:text-base">9019336365</p>
           </div>
         </div>
       </div>
 
       {/* Additional Info Section */}
-      <div className="mt-10 p-5 bg-[#0f172b] rounded-lg text-center text-white">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div className="mt-8 sm:mt-10 p-4 sm:p-5 bg-[#0f172b] rounded-lg text-center text-white">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
           <div className="flex items-center gap-3">
-            <FaClock className="text-2xl" />
-            <span className="text-lg font-bold font-montserrat">
+            <FaClock className="text-xl sm:text-2xl" />
+            <span className="text-base sm:text-lg font-bold font-montserrat">
               Rooms Check Out Time 24/hour
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <FaCreditCard className="text-2xl" />
-            <span className="text-lg font-bold font-montserrat">
+            <FaCreditCard className="text-xl sm:text-2xl" />
+            <span className="text-base sm:text-lg font-bold font-montserrat">
               All Major Cards Accepted
             </span>
           </div>
@@ -92,7 +100,7 @@ const HomeContactUsSection = () => {
       </div>
 
       {/* Map and Form Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 sm:mt-10">
         {/* Map */}
         <div className="rounded-lg overflow-hidden shadow-lg">
           <iframe
@@ -103,71 +111,84 @@ const HomeContactUsSection = () => {
             allowFullScreen=""
             loading="lazy"
             title="Location Map"
+            className="h-full"
           ></iframe>
         </div>
 
         {/* EmailJS Form */}
-        <div className="p-5 bg-white shadow-lg rounded-lg">
-          <form ref={formRef} onSubmit={sendEmail} className="space-y-5">
+        <div className="p-4 sm:p-5 bg-white shadow-lg rounded-lg">
+          <form
+            ref={formRef}
+            onSubmit={sendEmail}
+            className="space-y-4 sm:space-y-5"
+          >
             <div>
-              <label className="block font-bold text-gray-600">Name</label>
+              <label className="block font-bold text-gray-600 mb-1">Name</label>
               <input
                 type="text"
                 name="name"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
                 required
               />
             </div>
             <div>
-              <label className="block font-bold text-gray-600">Email</label>
+              <label className="block font-bold text-gray-600 mb-1">
+                Email
+              </label>
               <input
                 type="email"
                 name="email"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
                 required
               />
             </div>
             <div>
-              <label className="block font-bold text-gray-600">Mobile</label>
+              <label className="block font-bold text-gray-600 mb-1">
+                Mobile
+              </label>
               <input
                 type="tel"
                 name="mobile"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
                 required
               />
             </div>
             <div>
-              <label className="block font-bold text-gray-600">Check-In</label>
+              <label className="block font-bold text-gray-600 mb-1">
+                Check-In
+              </label>
               <input
                 type="date"
                 name="checkin"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
                 required
               />
             </div>
             <div>
-              <label className="block font-bold text-gray-600">Check-Out</label>
+              <label className="block font-bold text-gray-600 mb-1">
+                Check-Out
+              </label>
               <input
                 type="date"
                 name="checkout"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
                 required
               />
             </div>
             <div>
-              <label className="block font-bold text-gray-600">
+              <label className="block font-bold text-gray-600 mb-1">
                 Number of Rooms
               </label>
               <input
                 type="number"
                 name="rooms"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FEA116]"
                 required
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-[#FEA116] text-white p-3 rounded-lg hover:bg-[#d98410] transition-all duration-300"
+              className="w-full bg-[#FEA116] text-white p-2 sm:p-3 rounded-lg hover:bg-[#d98410] transition-all duration-300 text-sm sm:text-base"
             >
               Send Message
             </button>

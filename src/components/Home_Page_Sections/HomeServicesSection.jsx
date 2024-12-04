@@ -1,22 +1,22 @@
 import React from "react";
-import { FaHotel } from "react-icons/fa";
+import { FaHotel, FaWater, FaTv } from "react-icons/fa";
 
 const HomeServicesSection = () => {
   const array = [
     {
       icon: <FaHotel />,
-      serviceName: "Rooms & Appartment",
-      desc: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      serviceName: "AC / Non AC Rooms",
+      desc: "Spacious AC and Non-AC rooms designed for comfort and relaxation",
     },
     {
-      icon: <FaHotel />,
-      serviceName: "Food & Restaurant",
-      desc: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      icon: <FaWater />,
+      serviceName: "24/7 Hot water",
+      desc: "Enjoy 24/7 hot water for a refreshing and convenient stay.",
     },
     {
-      icon: <FaHotel />,
-      serviceName: "Event & Party",
-      desc: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      icon: <FaTv />,
+      serviceName: "HD Television",
+      desc: "HD televisions in every room for your entertainment needs.",
     },
   ];
 
@@ -27,12 +27,12 @@ const HomeServicesSection = () => {
         <div className="flex flex-col justify-center items-center">
           <h5 className="uppercase font-bold font-montserrat text-[#FEA116] inline-flex items-center gap-5">
             <span className="w-20 border-t-2 border-[#FEA116]"></span>
-            Our Services
+            Our Facilities
             <span className="w-20 border-t-2 border-[#FEA116]"></span>
           </h5>
           <h1 className="font-bold font-montserrat text-4xl">
             Explore Our{" "}
-            <span className="text-[#FEA116] uppercase">Services</span>
+            <span className="text-[#FEA116] uppercase">Facilities</span>
           </h1>
         </div>
       </section>
@@ -62,6 +62,11 @@ const HomeServicesSection = () => {
             </div>
           ))}
         </div>
+        <div className="flex justify-center mt-10">
+          <button className="w-full md:w-auto text-white uppercase font-medium bg-[#fea116] px-8 md:px-14 py-3 md:py-4 hover:bg-[#e99015] transition-colors">
+            Know More
+          </button>
+        </div> 
       </section>
     </section>
   );

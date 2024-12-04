@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBed, FaShieldAlt, FaPhoneAlt } from "react-icons/fa";
-import AboutImage from "../../../assets/Home_About_Us.jpg";
+import AboutImage from "../../../assets/Home_About_Us.png";
 
 const AboutWhyChooseUs = () => {
   return (
