@@ -46,7 +46,7 @@ const Home_Places = () => {
   return (
     <section className="container mx-auto">
       {/* Header */}
-      <section className="text-center mb-10">
+      <section className="text-center">
         <div className="flex flex-col justify-center items-center">
           <h5 className="uppercase font-bold font-montserrat text-[#FEA116] inline-flex items-center gap-5">
             <span className="w-20 border-t-2 border-[#FEA116]"></span>
@@ -61,7 +61,7 @@ const Home_Places = () => {
       </section>
 
       {/* Table Section */}
-      <section className="overflow-x-auto">
+      <section className="overflow-x-auto mt-14">
         <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
           <thead>
             <tr className="bg-[#FEA116] text-white">
