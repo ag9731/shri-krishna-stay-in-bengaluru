@@ -9,6 +9,10 @@ import galleryImg7 from "../../../assets/gallery images/7.webp";
 import galleryImg8 from "../../../assets/gallery images/8.webp";
 import galleryImg9 from "../../../assets/gallery images/9.webp";
 import galleryImg10 from "../../../assets/gallery images/10.webp";
+import galleryImg11 from "../../../assets/gallery images/11.webp";
+import galleryImg12 from "../../../assets/gallery images/12.webp";
+import galleryImg13 from "../../../assets/gallery images/13.webp";
+import galleryImg14 from "../../../assets/gallery images/14.webp";
 
 const GalleryTabs = () => {
   const array = [
@@ -21,7 +25,11 @@ const GalleryTabs = () => {
     { id: 6, img: galleryImg7 },
     { id: 7, img: galleryImg8 },
     { id: 8, img: galleryImg9 },
-    { id: 9, img: galleryImg10 },
+    { id: 10, img: galleryImg10 },
+    { id: 11, img: galleryImg11 },
+    { id: 12, img: galleryImg12 },
+    { id:13, img: galleryImg13 },
+    { id: 14, img: galleryImg14 },
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);

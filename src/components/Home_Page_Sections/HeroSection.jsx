@@ -4,6 +4,7 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import slide1 from "../../assets/Home_Page_Banners/slide1.webp";
 import slide2 from "../../assets/Home_Page_Banners/slide2.webp";
 import slide3 from "../../assets/Home_Page_Banners/slide3.webp";
+import slide4 from "../../assets/Home_Page_Banners/slide4.webp";
 import "./HeroSection.css";
 
 // const SampleArrow = ({ className, style, onClick, icon: Icon }) => (
@@ -47,9 +48,10 @@ const SampleArrow = ({ className, style, onClick, icon: Icon }) => (
 
 const HeroSection = () => {
   const images = [
+    { slide: slide3, title: "Discover A Brand Luxurious Hotel" },
     { slide: slide1, title: "Discover A Brand Luxurious Hotel" },
     { slide: slide2, title: "Discover A Brand Luxurious Hotel" },
-    { slide: slide3, title: "Discover A Brand Luxurious Hotel" },
+    { slide: slide4, title: "Discover A Brand Luxurious Hotel" },
   ];
 
   const settings = {
@@ -77,7 +79,7 @@ const HeroSection = () => {
                 src={item.slide}
                 alt={item.title}
               />
-              <div className="absolute inset-0 bg-black opacity-65"></div>
+              <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4 md:px-0">
               <div className="text-center">
