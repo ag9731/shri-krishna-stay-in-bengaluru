@@ -10,11 +10,11 @@ const Home_Nearby_Places = () => {
     dots: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
     speed: 5000,
-    autoplaySpeed: 0,
-    cssEase: "linear",
+    autoplaySpeed: 200,
+    // cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024, // Tablet and above

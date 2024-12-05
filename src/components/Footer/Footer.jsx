@@ -56,11 +56,12 @@ const Footer = () => {
 
         {/* Another Section (Optional) */}
         <div>
-          <h1 className="uppercase text-lg font-bold mb-4">Services</h1>
+          <h1 className="uppercase text-lg font-bold mb-4">Facilities</h1>
           <ul className="space-y-2">
-            <li className="hover:text-yellow-400 transition">Service 1</li>
-            <li className="hover:text-yellow-400 transition">Service 2</li>
-            <li className="hover:text-yellow-400 transition">Service 3</li>
+            <li className="hover:text-yellow-400 transition">Hot Water</li>
+            <li className="hover:text-yellow-400 transition">Wifi</li>
+            <li className="hover:text-yellow-400 transition">HD Television</li>
+            <li className="hover:text-yellow-400 transition">A/c Non A/c Roms</li>
           </ul>
         </div>
 

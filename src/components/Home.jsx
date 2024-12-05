@@ -34,9 +34,9 @@ const Home = () => {
       <section>
         <HomeServicesSection />
       </section>
-      <section>
+      {/* <section>
         <Home_Nearby_Places />
-      </section>
+      </section> */}
       <section>
         <HomeContactUsSection />
       </section>
