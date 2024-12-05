@@ -19,68 +19,66 @@ const FacilitiesSection = () => {
     {
       serviceName: "HD Television",
       serviceDesc:
-        "A spacious venue for hosting events, from birthdays to corporate gatherings, with all the amenities for a memorable celebration.",
+        "Enjoy your favorite shows with crystal-clear HD television in every room.",
       icon: <FaTv className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "AC / Non AC Rooms",
       serviceDesc:
-        "Enjoy a diverse menu of freshly prepared dishes in a comfortable dining space, perfect for casual meals or special occasions.",
+        "Choose from our comfortable AC and Non-AC rooms to suit your preferences.",
       icon: <FaFan className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "24/7 Hot water",
       serviceDesc:
-        "Stay connected with high-speed WiFi available 24/7, ideal for both work and leisure.",
+        "Experience the convenience of 24/7 hot water for a relaxing stay.",
       icon: <FaShower className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "Food Service",
       serviceDesc:
-        "Access hot water at any time for your comfort, whether for showers or other needs.",
+        "Savor delicious meals with our prompt and quality food service.",
       icon: <FaCookie className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "Extra beds are provided",
-      serviceDesc:
-        "Access hot water at any time for your comfort, whether for showers or other needs.",
+      serviceDesc: "Extra beds available for added comfort and convenience.",
       icon: <FaBed className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "Hot Beverages & Filter Water",
       serviceDesc:
-        "Access hot water at any time for your comfort, whether for showers or other needs.",
+        "Enjoy refreshing hot beverages and clean filter water anytime.",
       icon: <FaWater className="text-[#FEA116]" size={30} />,
     },
 
     {
       serviceName: "24Hr Checkin & Checkout",
       serviceDesc:
-        "Access hot water at any time for your comfort, whether for showers or other needs.",
+        "Flexible 24-hour check-in and check-out for your convenience.",
       icon: <FaClock className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "Car & Two Wheeler Paking",
       serviceDesc:
-        "Access hot water at any time for your comfort, whether for showers or other needs.",
+        "Secure car and two-wheeler parking available for all guests.",
       icon: <FaCarAlt className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "Doctor On Call",
-      serviceDesc:
-        "Access hot water at any time for your comfort, whether for showers or other needs.",
+      serviceDesc: "Access to a doctor on call for your health and safety.",
       icon: <FaHandHoldingMedical className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "Travel Desk",
       serviceDesc:
-        "Access hot water at any time for your comfort, whether for showers or other needs.",
+        "Efficient travel desk services to assist with your journey plans.",
       icon: <FaUserTie className="text-[#FEA116]" size={30} />,
     },
     {
       serviceName: "Dry Clean",
       serviceDesc:
-        "Access hot water at any time for your comfort, whether for showers or other needs.",
+        "Prompt dry cleaning services to keep your clothes fresh and clean.",
       icon: <FaHotTub className="text-[#FEA116]" size={30} />,
     },
   ];

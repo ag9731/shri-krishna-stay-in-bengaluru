@@ -1,39 +1,27 @@
 import React, { useState } from "react";
+import galleryImg1 from "../../../assets/gallery images/1.webp";
+import galleryImg2 from "../../../assets/gallery images/2.webp";
+import galleryImg3 from "../../../assets/gallery images/3.webp";
+import galleryImg4 from "../../../assets/gallery images/4.webp";
+import galleryImg5 from "../../../assets/gallery images/5.webp";
+import galleryImg6 from "../../../assets/gallery images/6.webp";
+import galleryImg7 from "../../../assets/gallery images/7.webp";
+import galleryImg8 from "../../../assets/gallery images/8.webp";
+import galleryImg9 from "../../../assets/gallery images/9.webp";
+import galleryImg10 from "../../../assets/gallery images/10.webp";
 
 const GalleryTabs = () => {
   const array = [
-    {
-      id: 0,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTP17--jkQhcJTWguP5p8wEujMVph7jbRA&s",
-    },
-    {
-      id: 1,
-      img: "https://i.ytimg.com/vi/Cr97t3U517A/maxresdefault.jpg",
-    },
-    {
-      id: 2,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTP17--jkQhcJTWguP5p8wEujMVph7jbRA&s",
-    },
-    {
-      id: 3,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTP17--jkQhcJTWguP5p8wEujMVph7jbRA&s",
-    },
-    {
-      id: 4,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTP17--jkQhcJTWguP5p8wEujMVph7jbRA&s",
-    },
-    {
-      id: 5,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTP17--jkQhcJTWguP5p8wEujMVph7jbRA&s",
-    },
-    {
-      id: 6,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTP17--jkQhcJTWguP5p8wEujMVph7jbRA&s",
-    },
-    {
-      id: 7,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTP17--jkQhcJTWguP5p8wEujMVph7jbRA&s",
-    },
+    { id: 0, img: galleryImg1 },
+    { id: 1, img: galleryImg2 },
+    { id: 2, img: galleryImg3 },
+    { id: 3, img: galleryImg4 },
+    { id: 4, img: galleryImg5 },
+    { id: 5, img: galleryImg6 },
+    { id: 6, img: galleryImg7 },
+    { id: 7, img: galleryImg8 },
+    { id: 8, img: galleryImg9 },
+    { id: 9, img: galleryImg10 },
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
