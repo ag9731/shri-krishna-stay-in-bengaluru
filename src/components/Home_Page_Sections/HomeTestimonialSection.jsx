@@ -31,7 +31,7 @@ const TestimonialCarousel = () => {
     },
     {
       image:
-        "https://p.kindpng.com/picc/s/600-6005185_branca-de-neve-logo-png-download-birthday-transparent.png",
+        "https://d2uur722ua7fvv.cloudfront.net/photos/Dr-Ruchi-Taliwal-MD-179103-circle_large__v1__.png",
       name: "Jahnavi",
       profession: "Hubli",
       review:
