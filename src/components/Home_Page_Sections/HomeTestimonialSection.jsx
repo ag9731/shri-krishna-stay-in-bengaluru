@@ -6,33 +6,34 @@ import Slider from "react-slick";
 const TestimonialCarousel = () => {
   const testimonials = [
     {
-      image: "https://demo.htmlcodex.com/pro/hotelier/img/testimonial-3.jpg",
+      image:
+        "https://www2.deloitte.com/content/dam/html/us/dei22/img/profile-USI_Manish_500x500.jpg",
       name: "Rakesh",
-      profession: "Web Developer",
+      profession: "Chennai",
       review:
         "Amazing service and support. I highly recommend this company! The staff was friendly and very accommodating. The overall experience was seamless and exceeded my expectations.",
     },
     {
       image:
-        "https://media.portmoni.com/resized/87664/linkedin-profile-picture-maker-featuring-a-circle-with-a-bold-stroke-5759b-el1_3-thumbnail-600x600.png",
-      name: "Sarika",
-      profession: "Full Stack Developer",
+        "https://assets.devfolio.co/users/43148b199ca84e31aa0c3df4d8c68457/avatar.jpeg",
+      name: "Paramesh",
+      profession: "Kerala",
       review:
         "The team was extremely helpful and professional. Great work! The attention to detail in their service was remarkable. I would definitely return for future projects.",
     },
     {
       image:
-        "https://www.kindpng.com/picc/m/650-6507366_molly-testimonial-girl-hd-png-download.png",
+        "https://p.kindpng.com/picc/s/600-6005185_branca-de-neve-logo-png-download-birthday-transparent.png",
       name: "Rashmi",
-      profession: "Digital Marketing",
+      profession: "Andra Pradesh",
       review:
         "They exceeded my expectations in every way. Thank you! The communication throughout the process was excellent. I am truly impressed by their dedication and effort.",
     },
     {
       image:
-        "https://images.squarespace-cdn.com/content/v1/557aec54e4b03c2094a2b4be/1548181738786-ZICMD107QZ5HH52QBUZ1/farough+testimonial+pics-04.png",
+        "https://p.kindpng.com/picc/s/600-6005185_branca-de-neve-logo-png-download-birthday-transparent.png",
       name: "Jahnavi",
-      profession: "Sales Manager",
+      profession: "Hubli",
       review:
         "Great experience. Would definitely recommend to others. The service quality was top-notch, and the team was very approachable. I felt valued as a customer throughout the process.",
     },
