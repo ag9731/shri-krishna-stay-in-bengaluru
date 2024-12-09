@@ -31,9 +31,11 @@ const Footer = () => {
   return (
     <footer className="bg-[#0f172b] text-white py-10 mt-10">
       <section className="grid grid-cols-1 md:grid-cols-4 gap-8 container mx-auto px-5">
-        {/* Logo or Company Info Section */}
-        <div className="p-5 rounded-lg text-white flex flex-col gap-5">
-          <h1 className="text-xl text-[#fea116]">About Us</h1>
+       
+
+        {/* About Us Footer Sectin */}
+        <div>
+          <h1 className="uppercase text-lg font-bold mb-4">About US</h1>
           <p>
             Welcome to Krishna Stay Inn, your home away from home in the
             bustling city of Bengaluru, Karnataka.
