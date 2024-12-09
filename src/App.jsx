@@ -11,27 +11,57 @@ import Restaurant from "./components/Restaurant/Restaurant";
 import Facilities from "./components/Facilities/Facilities";
 import ScrollToTop from "./components/ScrollToTop";
 import FloatingSocialMedia from "./components/FloatingSocialMedia";
+import DeluxeDoubleNonACRoom from "./components/SidebarComponent/DeluxeDoubleNonACRoom";
+import DeluxeDoubleACRoom from "./components/SidebarComponent/DeluxeDoubleACRoom";
+import DeluxeNonACTripleRoom from "./components/SidebarComponent/DeluxeNonACTripleRoom";
+import DeluxeACTripleRoom from "./components/SidebarComponent/DeluxeACTripleRoom";
+import DeluxeNonACFourBedRoom from "./components/SidebarComponent/DeluxeNonACFourBedRoom";
+import DeluxeACFourBedRoom from "./components/SidebarComponent/DeluxeACFourBedRoom";
 
 function App() {
   return (
     <>
       <Router>
-        <ScrollToTop/>
+        <ScrollToTop />
         <div>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route path="/contact" element={<ContactUs/>}/>
-            <Route path="/gallery" element={<Gallery/>}/>
-            <Route path="/rooms" element={<Rooms/>}/>
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/rooms" element={<Rooms />} />
             {/* <Route path="/restaurant" element={<Restaurant/>}/> */}
-            <Route path="/facilities" element={<Facilities/>}/>
+            <Route path="/facilities" element={<Facilities />} />
+            <Route
+              path="/Deluxe_Double_Non-AC_Room"
+              element={<DeluxeDoubleNonACRoom />}
+            />
+            <Route
+              path="/Deluxe_Double_AC_Room"
+              element={<DeluxeDoubleACRoom />}
+            />
+            <Route
+              path="/Deluxe_Non-AC_Triple_Room"
+              element={<DeluxeNonACTripleRoom />}
+            />
+            <Route
+              path="/Deluxe_AC_Triple_Room"
+              element={<DeluxeACTripleRoom />}
+            />
+            <Route
+              path="/Deluxe_Non-AC_Four_Bed_Room"
+              element={<DeluxeNonACFourBedRoom />}
+            />
+            <Route
+              path="/Deluxe_AC_Four_Bed_Room"
+              element={<DeluxeACFourBedRoom />}
+            />
           </Routes>
           <Footer />
         </div>
       </Router>
-      <FloatingSocialMedia/>
+      <FloatingSocialMedia />
     </>
   );
 }

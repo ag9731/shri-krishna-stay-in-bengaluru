@@ -25,10 +25,17 @@ const Header = () => {
             <div className="flex items-center justify-center sm:justify-start space-x-2">
               <FaMobileAlt className="text-gray-600" />
               <a
+                href="tel:9019336365"
+                className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
+              >
+                +91 90193 36365
+              </a>
+                <FaMobileAlt className="text-gray-600" />
+              <a
                 href="tel:9972014954"
                 className="font-medium text-sm sm:text-base text-gray-600 hover:text-blue-500"
               >
-                9972014954
+                +91 99720 14954
               </a>
             </div>
             <div className="flex items-center justify-center sm:justify-start space-x-2">

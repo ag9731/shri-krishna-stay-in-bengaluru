@@ -32,10 +32,11 @@ const Footer = () => {
     <footer className="bg-[#0f172b] text-white py-10 mt-10">
       <section className="grid grid-cols-1 md:grid-cols-4 gap-8 container mx-auto px-5">
         {/* Logo or Company Info Section */}
-        <div className="p-5 rounded-lg text-white">
-          <img src={logo} alt="" />
+        <div className="p-5 rounded-lg text-white flex flex-col gap-5">
+          <h1 className="text-xl text-[#fea116]">About Us</h1>
           <p>
-            No. 9/17, 1st Main Road, Maruthi Nagar, Madivala, Bangalore-560068.
+            Welcome to Krishna Stay Inn, your home away from home in the
+            bustling city of Bengaluru, Karnataka.
           </p>
         </div>
 

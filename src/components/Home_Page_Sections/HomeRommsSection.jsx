@@ -1,52 +1,72 @@
 import React from "react";
 import slide1 from "../../assets/Home_Page_Banners/slide1.webp";
 import { Link } from "react-router-dom";
-import Rooms from "../Rooms/Rooms";
 
 const HomeRommsSection = () => {
   const handleExploreClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
   };
+
   const array = [
     {
       image: slide1,
-      // roomPrice: "100RS",
       roomBed: "3 Bed",
       roomBath: "2 Bath",
       roomWifi: "Wifi",
-      roomName: "Junior Suite",
+      roomName: "Deluxe Double Non-AC Room",
       roomDesc:
         "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      link: "/Deluxe_Double_Non-AC_Room",
     },
     {
       image: slide1,
-      // roomPrice: "100RS",
       roomBed: "3 Bed",
       roomBath: "2 Bath",
       roomWifi: "Wifi",
-      roomName: "Junior Suite",
+      roomName: "Deluxe Double AC Room",
       roomDesc:
         "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      link: "/Deluxe_Double_AC_Room",
     },
     {
       image: slide1,
-      // roomPrice: "100RS",
       roomBed: "3 Bed",
       roomBath: "2 Bath",
       roomWifi: "Wifi",
-      roomName: "Junior Suite",
+      roomName: "Deluxe Non-AC Triple Room",
       roomDesc:
         "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      link: "/Deluxe_Non-AC_Triple_Room",
     },
     {
       image: slide1,
-      // roomPrice: "100RS",
       roomBed: "3 Bed",
       roomBath: "2 Bath",
       roomWifi: "Wifi",
-      roomName: "Junior Suite",
+      roomName: "Deluxe AC Triple Room",
       roomDesc:
         "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      link: "/Deluxe_AC_Triple_Room",
+    },
+    {
+      image: slide1,
+      roomBed: "3 Bed",
+      roomBath: "2 Bath",
+      roomWifi: "Wifi",
+      roomName: "Deluxe Non-AC Four Bed Room",
+      roomDesc:
+        "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      link: "/Deluxe_Non-AC_Four_Bed_Room",
+    },
+    {
+      image: slide1,
+      roomBed: "3 Bed",
+      roomBath: "2 Bath",
+      roomWifi: "Wifi",
+      roomName: "Deluxe AC Four Bed Room",
+      roomDesc:
+        "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.",
+      link: "/Deluxe_AC_Four_Bed_Room",
     },
   ];
 
@@ -68,7 +88,56 @@ const HomeRommsSection = () => {
 
       {/* Lower Section */}
       <section>
-        <Rooms/>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto px-4">
+          {array.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row shadow-md rounded-lg overflow-hidden"
+            >
+              {/* Left Image */}
+              <div className="md:w-1/2">
+                <img
+                  src={item.image}
+                  alt={item.roomName}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Right Content */}
+              <div className="p-5 flex flex-col gap-3 md:w-1/2">
+                <h1 className="bg-[#FEA116] px-4 py-1 text-white font-bold font-montserrat inline-block">
+                  {item.roomPrice}
+                </h1>
+                <h1 className="text-xl font-bold font-montserrat">
+                  {item.roomName}
+                </h1>
+                <div className="flex items-center justify-between text-gray-700">
+                  <h1 className="border-r-2 pr-4 border-gray-300">
+                    {item.roomBath}
+                  </h1>
+                  <h1 className="border-r-2 px-4 border-gray-300">
+                    {item.roomBed}
+                  </h1>
+                  <h1 className="pl-4">{item.roomWifi}</h1>
+                </div>
+                <p className="text-gray-600">{item.roomDesc}</p>
+                <div className="flex gap-5">
+                  <Link to="/contact" onClick={handleExploreClick}>
+                    <button className="text-white uppercase font-medium px-3 py-2 bg-[#0f172b] rounded-lg mt-auto">
+                      Book Now
+                    </button>
+                  </Link>
+
+                  {/* Link the "Know More" button to the specific room page */}
+                  <Link to={item.link} onClick={handleExploreClick}>
+                    <button className="text-white uppercase font-medium px-3 py-2 bg-[#0f172b] rounded-lg mt-auto">
+                      Know More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </section>
   );

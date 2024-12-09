@@ -23,7 +23,7 @@ const DeluxeDoubleNonACRoom = () => {
   };
 
   return (
-    <section className="flex flex-col gap-8 px-4">
+    <section className="container mx-auto flex flex-col gap-8 px-4">
       {/* Image Slider */}
       <div>
         <Slider {...settings}>
