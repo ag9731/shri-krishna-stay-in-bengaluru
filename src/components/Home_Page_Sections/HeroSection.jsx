@@ -80,7 +80,7 @@ const HeroSection = () => {
                 src={item.slide}
                 alt={item.title}
               />
-              <div className="absolute inset-0 bg-black opacity-50"></div>
+              {/* <div className="></div> */}
             </div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4 md:px-0">
               <div className="text-center">

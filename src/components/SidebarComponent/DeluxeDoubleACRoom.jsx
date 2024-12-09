@@ -49,26 +49,21 @@ const DeluxeDoubleACRoom = () => {
       {/* Room Description */}
       <div>
         <p className="text-justify leading-6">
-          The Deluxe AC Room is the comfortable choice for two occupants. This
-          room, at our hotel Bangalore, comes with a double bed and is
-          air-conditioned and furnished with the latest amenities to ensure a
-          comfortable stay.
+          Perfect for couples or solo travelers, the Deluxe AC Room offers a
+          cozy and peaceful environment for relaxation. With its modern decor,
+          plush bedding, and top-notch amenities, guests can enjoy a restful
+          night’s sleep and feel right at home. Whether you're in town for
+          business or leisure, this room provides everything you need for a
+          comfortable and convenient stay.
         </p>
       </div>
 
       {/* Pricing Information */}
-      <div>
-        <ul className="flex flex-col gap-2">
-          <li className="bg-blue-300 p-2 rounded">
-            <span className="font-bold">Single:</span> INR 1100/-
-          </li>
-          <li className="bg-blue-300 p-2 rounded">
-            <span className="font-bold">Double:</span> INR 1500/-
-          </li>
-        </ul>
-      </div>
 
       {/* Amenities */}
+      <div>
+        <h1 className="text-3xl font-montserrat">Amenities</h1>
+      </div>
       <div>
         <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-2 list-disc">
           <li>Room Service</li>

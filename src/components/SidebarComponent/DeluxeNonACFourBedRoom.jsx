@@ -50,25 +50,21 @@ const DeluxeNonACFourBedRoom = () => {
       {/* Room Description */}
       <div>
         <p className="text-justify leading-6">
-          Planning a family outing? Look no further as the Deluxe Non-Ac Four
-          Bed Room fulfills all requirements that your family or friends might
-          have. Equipped with two double beds in a large environment, this hotel
-          room in Maruthi Nagar Madivala Banglore grants you plenty of breathing
-          space and comes with all the modern amenities.
+          The Deluxe Non-Ac Four Bed Room is perfect for families or small
+          groups seeking comfort and convenience. With ample space, it provides
+          a relaxed environment where everyone can enjoy their stay together.
+          Whether you're here for a weekend getaway or an extended visit, this
+          room ensures a cozy, hassle-free experience with all the essential
+          amenities at your fingertips.
         </p>
       </div>
 
       {/* Pricing Information */}
-      <div>
-        <ul className="flex flex-col gap-2">
-          <li className="bg-blue-300 p-2 rounded">
-            <span className="font-bold">Deluxe Four Bed Non AC Room:</span> IINR
-            1,750/-
-          </li>
-        </ul>
-      </div>
 
       {/* Amenities */}
+      <div>
+        <h1 className="text-3xl font-montserrat">Amenities</h1>
+      </div>
       <div>
         <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-2 list-disc">
           <li>Room Service</li>

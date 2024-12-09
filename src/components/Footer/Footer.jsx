@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGreaterThan } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png"
 
 const Footer = () => {
 
@@ -31,8 +32,8 @@ const Footer = () => {
     <footer className="bg-[#0f172b] text-white py-10 mt-10">
       <section className="grid grid-cols-1 md:grid-cols-4 gap-8 container mx-auto px-5">
         {/* Logo or Company Info Section */}
-        <div className="bg-yellow-400 p-5 rounded-lg text-black">
-          <h1 className="text-xl font-bold">Company Logo</h1>
+        <div className="p-5 rounded-lg text-white">
+          <img src={logo} alt="" />
           <p>
             No. 9/17, 1st Main Road, Maruthi Nagar, Madivala, Bangalore-560068.
           </p>

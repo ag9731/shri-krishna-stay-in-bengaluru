@@ -50,29 +50,21 @@ const DeluxeDoubleNonACRoom = () => {
       {/* Room Description */}
       <div>
         <p className="text-justify leading-6">
-          The Deluxe Room is the ideal choice for two occupants. The room comes
-          with a double bed and is furnished with the latest amenities to ensure
-          a comfortable stay in Bengaluru.
+          Designed for simplicity and comfort, the Deluxe Room offers a peaceful
+          retreat with a welcoming atmosphere. Whether you're visiting for
+          business or leisure, the room’s modern amenities provide everything
+          you need for a pleasant stay. Located in the heart of Bengaluru, it’s
+          the perfect base for exploring the city while enjoying a restful
+          environment.
         </p>
       </div>
 
       {/* Pricing Information */}
-      <div>
-        <ul className="flex flex-col gap-2">
-          <li className="bg-blue-300 p-2 rounded">
-            <span className="font-bold">Single:</span> INR 900/-
-          </li>
-          <li className="bg-blue-300 p-2 rounded">
-            <span className="font-bold">Double:</span> INR 1100/-
-          </li>
-          <li className="bg-blue-300 p-2 font-bold rounded">
-            Extra Person Charges will be Rs 200/- . All the rates are exclusive
-            of Taxes.
-          </li>
-        </ul>
-      </div>
 
       {/* Amenities */}
+      <div>
+        <h1 className="text-3xl font-montserrat">Amenities</h1>
+      </div>
       <div>
         <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-2 list-disc">
           <li>Room Service</li>

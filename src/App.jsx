@@ -10,6 +10,7 @@ import Rooms from "./components/Rooms/Rooms";
 import Restaurant from "./components/Restaurant/Restaurant";
 import Facilities from "./components/Facilities/Facilities";
 import ScrollToTop from "./components/ScrollToTop";
+import FloatingSocialMedia from "./components/FloatingSocialMedia";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Footer />
         </div>
       </Router>
+      <FloatingSocialMedia/>
     </>
   );
 }

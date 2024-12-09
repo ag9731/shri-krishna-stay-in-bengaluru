@@ -1,112 +1,105 @@
-import React, { useState, useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import React from "react";
+import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialCarousel = () => {
   const testimonials = [
     {
       image: "https://demo.htmlcodex.com/pro/hotelier/img/testimonial-3.jpg",
-      Cname: "Akash",
-      Cprofession: "Web Developer",
-      Creview: "Amazing service and support. I highly recommend this company!",
+      name: "Rakesh",
+      profession: "Web Developer",
+      review:
+        "Amazing service and support. I highly recommend this company! The staff was friendly and very accommodating. The overall experience was seamless and exceeded my expectations.",
     },
     {
-      image: "https://demo.htmlcodex.com/pro/hotelier/img/testimonial-3.jpg",
-      Cname: "Bharath",
-      Cprofession: "Full Stack Developer",
-      Creview: "The team was extremely helpful and professional. Great work!",
+      image:
+        "https://media.portmoni.com/resized/87664/linkedin-profile-picture-maker-featuring-a-circle-with-a-bold-stroke-5759b-el1_3-thumbnail-600x600.png",
+      name: "Sarika",
+      profession: "Full Stack Developer",
+      review:
+        "The team was extremely helpful and professional. Great work! The attention to detail in their service was remarkable. I would definitely return for future projects.",
     },
     {
-      image: "https://demo.htmlcodex.com/pro/hotelier/img/testimonial-3.jpg",
-      Cname: "Rakesh",
-      Cprofession: "Digital Marketing",
-      Creview: "They exceeded my expectations in every way. Thank you!",
+      image:
+        "https://www.kindpng.com/picc/m/650-6507366_molly-testimonial-girl-hd-png-download.png",
+      name: "Rashmi",
+      profession: "Digital Marketing",
+      review:
+        "They exceeded my expectations in every way. Thank you! The communication throughout the process was excellent. I am truly impressed by their dedication and effort.",
     },
     {
-      image: "https://demo.htmlcodex.com/pro/hotelier/img/testimonial-3.jpg",
-      Cname: "Paramesh",
-      Cprofession: "Sales Manager",
-      Creview: "Great experience. Would definitely recommend to others.",
+      image:
+        "https://images.squarespace-cdn.com/content/v1/557aec54e4b03c2094a2b4be/1548181738786-ZICMD107QZ5HH52QBUZ1/farough+testimonial+pics-04.png",
+      name: "Jahnavi",
+      profession: "Sales Manager",
+      review:
+        "Great experience. Would definitely recommend to others. The service quality was top-notch, and the team was very approachable. I felt valued as a customer throughout the process.",
     },
   ];
 
-  const [current, setCurrent] = useState(0);
-  const length = testimonials.length;
-
-  // Automatically slide to the next testimonial
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev === length - 1 ? 0 : prev + 1));
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(timer); // Cleanup on component unmount
-  }, [length]);
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <section>
-      {/* Section Header */}
-      <section className="text-center mb-10">
-        <div className="flex flex-col justify-center items-center">
-          <h5 className="uppercase font-bold font-montserrat text-[#FEA116] inline-flex items-center gap-5">
-            <span className="w-20 border-t-2 border-[#FEA116]"></span>
-            Testimonials
-            <span className="w-20 border-t-2 border-[#FEA116]"></span>
-          </h5>
-          <h1 className="font-bold font-montserrat text-4xl">
-            What Our{" "}
-            <span className="text-[#FEA116] uppercase">Clients Say</span>
-          </h1>
-        </div>
-      </section>
-
-      {/* Carousel */}
-      <div className="relative max-w-3xl mx-auto overflow-hidden">
-        <div
-          className="flex transition-transform duration-700 ease-in-out"
-          style={{
-            transform: `translateX(-${current * 100}%)`,
-          }}
-        >
-          {testimonials.map((item, index) => (
-            <div
-              key={index}
-              className="min-w-full bg-white shadow-lg rounded-lg p-6 text-center"
-            >
-              <img
-                src={item.image}
-                alt={item.Cname}
-                className="w-20 h-20 rounded-full mx-auto mb-4"
-              />
-              <h3 className="text-lg font-bold">{item.Cname}</h3>
-              <p className="text-sm text-gray-500">{item.Cprofession}</p>
-              <p className="mt-4 text-gray-700">{item.Creview}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Left Arrow */}
-        <button
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full text-gray-700 hover:bg-gray-400 focus:outline-none"
-          onClick={prevSlide}
-        >
-          <FaArrowLeft />
-        </button>
-
-        {/* Right Arrow */}
-        <button
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full text-gray-700 hover:bg-gray-400 focus:outline-none"
-          onClick={nextSlide}
-        >
-          <FaArrowRight />
-        </button>
+    <section className="container mx-auto px-4 ">
+      <div className="text-center mb-12">
+        <h2 className="text-xl font-semibold text-[#FEA116] mb-2 flex items-center justify-center">
+          <span className="hidden sm:inline-block w-12 h-0.5 bg-[#FEA116] mr-4"></span>
+          Testimonials
+          <span className="hidden sm:inline-block w-12 h-0.5 bg-[#FEA116] ml-4"></span>
+        </h2>
+        <h3 className="text-3xl sm:text-4xl font-bold">
+          What Our <span className="text-[#FEA116]">Clients Say</span>
+        </h3>
       </div>
+
+      <Slider {...settings} className="testimonial-slider">
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className="px-4">
+            <div className="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col">
+              <img
+                src={testimonial.image}
+                alt={`${testimonial.name}'s profile`}
+                className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+              />
+              <h4 className="text-xl font-semibold text-center mb-2">
+                {testimonial.name}
+              </h4>
+              <p className="text-[#FEA116] text-center mb-4">
+                {testimonial.profession}
+              </p>
+              <p className="text-gray-600 text-center flex-grow">
+                {testimonial.review}
+              </p>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </section>
   );
 };

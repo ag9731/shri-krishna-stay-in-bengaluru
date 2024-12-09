@@ -87,14 +87,14 @@ const HomeContactUsSection = () => {
               href="tel:9972014954"
               className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
             >
-              9972014954
+              +91 99720 14954
             </a>
             <br />
             <a
               href="tel:9019336365"
               className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
             >
-              9019336365
+              +91 90193 36365
             </a>
           </div>
         </div>

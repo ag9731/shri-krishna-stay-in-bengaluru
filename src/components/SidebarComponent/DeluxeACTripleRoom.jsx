@@ -49,30 +49,21 @@ const DeluxeACTripleRoom = () => {
       {/* Room Description */}
       <div>
         <p className="text-justify leading-6">
-          Slightly larger than the Deluxe Room and air-conditioned, the Deluxe
-          AC Triple Room can accommodate 3 guests. The room at The Signature Inn
-          - one of the best hotels in Maruthi Nagar Madivala Banglore, comes
-          with a double bed and a single bed. Fully furnished and hygienic, this
-          room comes in two varieties:
+          Ideal for small families or friends traveling together, the Deluxe AC
+          Triple Room offers a spacious and comfortable retreat. With a
+          well-designed layout, modern furnishings, and a focus on cleanliness,
+          it provides a cozy atmosphere for guests to unwind. Whether you choose
+          the standard or premium option, both varieties ensure a memorable and
+          restful stay at The Signature Inn.
         </p>
       </div>
 
       {/* Pricing Information */}
-      <div>
-        <ul className="flex flex-col gap-2">
-          <li className="bg-blue-300 p-2 rounded">
-            <span className="font-bold">Deluxe Triple AC Room:</span> INR 1,800
-          </li>
-          <li className="bg-blue-300 p-2 rounded">
-            <span className="font-bold">
-              Extra Person Charges will be Rs 200/- . All the rates are
-              exclusive of Taxes.
-            </span>{" "}
-          </li>
-        </ul>
-      </div>
 
       {/* Amenities */}
+      <div>
+         <h1 className="text-3xl font-montserrat">Amenities</h1>
+       </div>
       <div>
         <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-2 list-disc">
           <li>Room Service</li>

@@ -48,11 +48,16 @@ const DeluxeNonACTripleRoom = () => {
 
        {/* Room Description */}
        <div>
+         <h1 className="text-3xl font-montserrat">Amenities</h1>
+       </div>
+       <div>
          <p className="text-justify leading-6">
-           The Deluxe Non-AC Triple Room comes with a double bed and a single
-           bed. The room is fully furnished and hygienic. The room at our budget
-           hotel near Maruthi Nagar Madivala Banglore gives you extra breathing
-           space.
+           Perfect for small families or friends traveling together, the Deluxe
+           Non-AC Triple Room offers a spacious and comfortable stay. The room's
+           clean, modern furnishings provide a welcoming atmosphere, while the
+           generous space ensures a relaxing environment for all guests. Located
+           near Maruthi Nagar in Bengaluru, it’s an affordable choice for those
+           looking for comfort on a budget.
          </p>
        </div>
 
@@ -60,13 +65,11 @@ const DeluxeNonACTripleRoom = () => {
        <div>
          <ul className="flex flex-col gap-2">
            <li className="bg-blue-300 p-2 rounded">
-             <span className="font-bold">Deluxe Triple Non AC Room: </span> INR
-             1,600
+             <span className="font-bold">Deluxe Triple Non AC Room</span>
            </li>
            <li className="bg-blue-300 p-2 rounded">
              <span className="font-bold">
-               Extra Person Charges will be Rs 200/- . All the rates are
-               exclusive of Taxes.
+               Extra Person Charges will be There.
              </span>{" "}
            </li>
          </ul>

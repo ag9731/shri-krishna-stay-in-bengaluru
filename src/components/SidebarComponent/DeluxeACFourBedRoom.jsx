@@ -48,31 +48,21 @@ const DeluxeACFourBedRoom = () => {
        {/* Room Description */}
        <div>
          <p className="text-justify leading-6">
-           The best that the hotel has to offer, the Deluxe AC Four Bed Room
-           fulfills all requirements that you might have. The room is fully
-           air-conditioned and equipped with two double beds in a large
-           environment.
+           The Deluxe AC Four Bed Room is designed with comfort and luxury in
+           mind, ensuring that guests experience a peaceful and restful stay.
+           With ample space, modern amenities, and tasteful decor, it is perfect
+           for families or groups looking for a home-away-from-home experience.
+           Whether you're here for a short stay or a longer getaway, this room
+           provides everything you need for a relaxing and enjoyable visit.
          </p>
        </div>
 
        {/* Pricing Information */}
-       <div>
-         <ul className="flex flex-col gap-2">
-           <li className="bg-blue-300 p-2 rounded">
-             <span className="font-bold">Deluxe AC Four Bed Room: </span> INR
-             1,950/-
-           </li>
-
-           <li className="bg-blue-300 p-2 rounded">
-             <span className="font-bold">
-               Extra person charges will be Rs 200/- . All the rates are
-               exclusive of taxes.
-             </span>{" "}
-           </li>
-         </ul>
-       </div>
 
        {/* Amenities */}
+       <div>
+         <h1 className="text-3xl font-montserrat">Amenities</h1>
+       </div>
        <div>
          <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-2 list-disc">
            <li>Room Service</li>
