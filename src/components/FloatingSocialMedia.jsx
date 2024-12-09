@@ -4,6 +4,13 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const FloatingSocialMedia = () => {
   return (
     <div className="fixed top-1/2 -translate-y-1/2 right-4 flex flex-col space-y-3 z-50">
+      {/* Call Button */}
+      <a
+        href="tel:+919019336365"
+        className="flex items-center justify-center w-12 h-12 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition"
+      >
+        <span className="text-xl">📞</span> {/* Call icon */}
+      </a>
       {/* Facebook */}
       <a
         href="https://facebook.com"

@@ -9,7 +9,7 @@ const Home_Places = () => {
       data: [
         {
           name: "Bangalore International Airport",
-          distance: "3.3KM",
+          distance: "33KM",
           time: "1HR",
         },
       ],
