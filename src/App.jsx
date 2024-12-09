@@ -9,11 +9,13 @@ import Gallery from "./components/Gallery/Gallery";
 import Rooms from "./components/Rooms/Rooms";
 import Restaurant from "./components/Restaurant/Restaurant";
 import Facilities from "./components/Facilities/Facilities";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop/>
         <div>
           <Header />
           <Routes>
@@ -22,7 +24,7 @@ function App() {
             <Route path="/contact" element={<ContactUs/>}/>
             <Route path="/gallery" element={<Gallery/>}/>
             <Route path="/rooms" element={<Rooms/>}/>
-            <Route path="/restaurant" element={<Restaurant/>}/>
+            {/* <Route path="/restaurant" element={<Restaurant/>}/> */}
             <Route path="/facilities" element={<Facilities/>}/>
           </Routes>
           <Footer />

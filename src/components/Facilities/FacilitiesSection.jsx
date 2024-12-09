@@ -111,11 +111,11 @@ const FacilitiesSection = () => {
         </div>
       </section>
 
-      <section className="flex items-center justify-center">
+      {/* <section className="flex items-center justify-center">
         <button className="text-white uppercase font-medium  bg-[#fea116] px-14 py-4">
           Explore More
         </button>
-      </section>
+      </section> */}
     </main>
   );
 };

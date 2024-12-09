@@ -1,8 +1,12 @@
 import React from "react";
 import AboutImage from "../../assets/Home_About_Us.png";
 import { FaCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HomeAboutUs = () => {
+  const handleExploreClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
+  };
   return (
     <section className="container mx-auto px-4 md:py-24">
       <div className="flex flex-col lg:flex-row gap-10">
@@ -70,9 +74,11 @@ const HomeAboutUs = () => {
             </div>
           </div> */}
           <div className="mt-4">
-            <button className="w-full md:w-auto text-white uppercase font-medium bg-[#fea116] px-8 md:px-14 py-3 md:py-4 hover:bg-[#e99015] transition-colors">
-              Explore More
-            </button>
+            <Link to="/about" onClick={handleExploreClick}>
+              <button className="w-full md:w-auto text-white uppercase font-medium bg-[#fea116] px-8 md:px-14 py-3 md:py-4 hover:bg-[#e99015] transition-colors">
+                Explore More
+              </button>
+            </Link>
           </div>
         </section>
       </div>

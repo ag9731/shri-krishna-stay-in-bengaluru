@@ -24,21 +24,33 @@ const Header = () => {
           <div className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 sm:space-x-4">
             <div className="flex items-center justify-center sm:justify-start space-x-2">
               <FaMobileAlt className="text-gray-600" />
-              <span className="font-medium text-sm sm:text-base">
+              <a
+                href="tel:9972014954"
+                className="font-medium text-sm sm:text-base text-gray-600 hover:text-blue-500"
+              >
                 9972014954
-              </span>
+              </a>
             </div>
             <div className="flex items-center justify-center sm:justify-start space-x-2">
               <FaEnvelope className="text-gray-600" />
-              <span className="font-medium text-sm sm:text-base">
+              <a
+                href="mailto:srikrishnastay@gmail.com"
+                className="font-medium text-sm sm:text-base text-gray-600 hover:text-blue-500"
+              >
                 srikrishnastay@gmail.com
-              </span>
+              </a>
             </div>
+
             <div className="hidden sm:flex items-center justify-center sm:justify-start space-x-2">
               <FaMapMarkerAlt className="text-gray-600 flex-shrink-0" />
-              <span className="font-medium text-sm sm:text-base lg:text-sm xl:text-base">
-                No. 9/17 1st Main Road, Maruthi Nagar Madivala Banglore-560068
-              </span>
+              <a
+                href="https://www.google.com/maps?q=No.+9/17+1st+Main+Road,+Maruthi+Nagar,+Madivala,+Bangalore-560068"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-sm sm:text-base lg:text-sm xl:text-base text-gray-600 hover:text-blue-500"
+              >
+                No. 9/17 1st Main Road, Maruthi Nagar Madivala Bangalore-560068
+              </a>
             </div>
           </div>
         </div>
@@ -63,6 +75,12 @@ const Header = () => {
               <li className="text-white uppercase cursor-pointer font-medium">
                 <Link to="/rooms">Rooms</Link>
               </li>
+
+              {/* Restaurent */}
+              {/* <li className="text-white uppercase cursor-pointer font-medium">
+                <Link to="/restaurant">Restaurent</Link>
+              </li> */}
+
               <li className="text-white uppercase cursor-pointer font-medium">
                 <Link to="/facilities">Facilities</Link>
               </li>
@@ -77,9 +95,11 @@ const Header = () => {
 
           {/* Book Now Button */}
           <div>
-            <button className="bg-yellow-400 px-6 py-3 font-bold cursor-pointer">
-              Book Now
-            </button>
+            <Link to="/contact">
+              <button className="bg-yellow-400 px-6 py-3 font-bold cursor-pointer">
+                Book Now
+              </button>
+            </Link>
           </div>
         </section>
 
@@ -124,6 +144,7 @@ const Header = () => {
                       >
                         <Link to="/rooms">Rooms</Link>
                       </li>
+
                       <li
                         className="text-white uppercase cursor-pointer font-medium"
                         onClick={handleToggle}

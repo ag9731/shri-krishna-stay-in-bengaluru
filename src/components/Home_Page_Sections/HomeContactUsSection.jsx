@@ -53,9 +53,14 @@ const HomeContactUsSection = () => {
             <h2 className="text-lg sm:text-xl font-bold font-montserrat mb-2">
               Location
             </h2>
-            <p className="text-gray-600 text-sm sm:text-base">
+            <a
+              href="https://www.google.com/maps?q=No.+9/17,+1st+Main+Road,+Maruthi+Nagar,+Madivala,+Bangalore-560068"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
+            >
               No. 9/17, 1st Main Road, Maruthi Nagar, Madivala, Bangalore-560068
-            </p>
+            </a>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-5 p-4 sm:p-5 bg-white shadow-lg rounded-lg transition-all duration-300 hover:shadow-2xl">
@@ -64,9 +69,12 @@ const HomeContactUsSection = () => {
             <h2 className="text-lg sm:text-xl font-bold font-montserrat mb-2">
               Mail
             </h2>
-            <p className="text-gray-600 text-sm sm:text-base">
+            <a
+              href="mailto:srikrishnastay@gmail.com"
+              className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
+            >
               srikrishnastay@gmail.com
-            </p>
+            </a>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-5 p-4 sm:p-5 bg-white shadow-lg rounded-lg transition-all duration-300 hover:shadow-2xl">
@@ -75,8 +83,19 @@ const HomeContactUsSection = () => {
             <h2 className="text-lg sm:text-xl font-bold font-montserrat mb-2">
               Mobile
             </h2>
-            <p className="text-gray-600 text-sm sm:text-base">9972014954</p>
-            <p className="text-gray-600 text-sm sm:text-base">9019336365</p>
+            <a
+              href="tel:9972014954"
+              className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
+            >
+              9972014954
+            </a>
+            <br />
+            <a
+              href="tel:9019336365"
+              className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
+            >
+              9019336365
+            </a>
           </div>
         </div>
       </div>

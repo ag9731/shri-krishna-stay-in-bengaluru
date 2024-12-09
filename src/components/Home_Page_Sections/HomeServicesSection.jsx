@@ -1,7 +1,13 @@
 import React from "react";
 import { FaHotel, FaWater, FaTv } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HomeServicesSection = () => {
+
+  const handleExploreClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
+  };
+
   const array = [
     {
       icon: <FaHotel />,
@@ -63,10 +69,12 @@ const HomeServicesSection = () => {
           ))}
         </div>
         <div className="flex justify-center mt-10">
-          <button className="w-full md:w-auto text-white uppercase font-medium bg-[#fea116] px-8 md:px-14 py-3 md:py-4 hover:bg-[#e99015] transition-colors">
-            Know More
-          </button>
-        </div> 
+          <Link to="/facilities" onClick={handleExploreClick}>
+            <button className="w-full md:w-auto text-white uppercase font-medium bg-[#fea116] px-8 md:px-14 py-3 md:py-4 hover:bg-[#e99015] transition-colors">
+              Know More
+            </button>
+          </Link>
+        </div>
       </section>
     </section>
   );

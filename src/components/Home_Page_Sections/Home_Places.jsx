@@ -73,8 +73,8 @@ const Home_Places = () => {
           </thead>
           <tbody>
             {places.map((place) => (
-              <>
-                <tr key={place.category} className="bg-gray-100">
+              <React.Fragment key={place.category}>
+                <tr className="bg-gray-100">
                   <td className="py-4 px-4 font-bold flex items-center gap-2 text-lg">
                     {place.icon}
                     {place.category}
@@ -89,7 +89,7 @@ const Home_Places = () => {
                     <td className="py-3 px-4">{item.time}</td>
                   </tr>
                 ))}
-              </>
+              </React.Fragment>
             ))}
           </tbody>
         </table>

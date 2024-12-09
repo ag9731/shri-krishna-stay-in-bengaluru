@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import image from "../../assets/Home_Page_Banners/slide2.webp";
+import { Link } from "react-router-dom";
 
 const HomeLuxuryLiving = () => {
+const handleExploreClick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
+};
   return (
     <>
       <section className="flex flex-col-reverse md:flex md:flex-row container mx-auto">
@@ -20,9 +24,11 @@ const HomeLuxuryLiving = () => {
             comfort and excellent service in a serene environment. Whether for
             business or leisure, we ensure a relaxing stay.
           </p>
-          <button className="text-white uppercase font-medium  bg-[#fea116] px-14 py-4 mt-5">
-            Explore More
-          </button>
+          <Link to="/rooms" onClick={handleExploreClick}>
+            <button className="text-white uppercase font-medium  bg-[#fea116] px-14 py-4 mt-5">
+              Explore More
+            </button>
+          </Link>
           {/* </div> */}
         </div>
 

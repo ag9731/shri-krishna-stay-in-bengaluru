@@ -1,7 +1,11 @@
 import React from "react";
 import slide1 from "../../assets/Home_Page_Banners/slide1.webp";
+import { Link } from "react-router-dom";
 
 const HomeRommsSection = () => {
+  const handleExploreClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
+  };
   const array = [
     {
       image: slide1,
@@ -95,9 +99,11 @@ const HomeRommsSection = () => {
                   <h1 className="pl-4">{item.roomWifi}</h1>
                 </div>
                 <p className="text-gray-600">{item.roomDesc}</p>
-                <button className="text-white uppercase font-medium bg-[#0f172b] px-6 py-2 rounded-lg mt-auto">
-                  Book Now
-                </button>
+                <Link to="/contact" onClick={handleExploreClick}>
+                  <button className="text-white uppercase font-medium bg-[#0f172b] px-6 py-2 rounded-lg mt-auto">
+                    Book Now
+                  </button>
+                </Link>
               </div>
             </div>
           ))}

@@ -61,16 +61,44 @@ const Footer = () => {
             <li className="hover:text-yellow-400 transition">Hot Water</li>
             <li className="hover:text-yellow-400 transition">Wifi</li>
             <li className="hover:text-yellow-400 transition">HD Television</li>
-            <li className="hover:text-yellow-400 transition">A/c Non A/c Roms</li>
+            <li className="hover:text-yellow-400 transition">
+              A/c Non A/c Roms
+            </li>
           </ul>
         </div>
 
         {/* Contact Info Section */}
         <div>
           <h1 className="uppercase text-lg font-bold mb-4">Contact Us</h1>
-          <p>Phone: 9972014954</p>
-          <p>Email: srikrishnastay@gmail.com</p>
-          <p>Location: Madivala, Bangalore-560068</p>
+          <p>
+            Phone:{" "}
+            <a
+              href="tel:9972014954"
+              className="hover:text-yellow-500 transition-colors"
+            >
+              9972014954
+            </a>
+          </p>
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:srikrishnastay@gmail.com"
+              className="hover:text-yellow-500 transition-colors"
+            >
+              srikrishnastay@gmail.com
+            </a>
+          </p>
+          <p>
+            Location:{" "}
+            <a
+              href="https://www.google.com/maps?q=Madivala,+Bangalore-560068"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-500 transition-colors"
+            >
+              Madivala, Bangalore-560068
+            </a>
+          </p>
         </div>
       </section>
     </footer>

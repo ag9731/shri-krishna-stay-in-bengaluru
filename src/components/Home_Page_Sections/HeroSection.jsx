@@ -6,6 +6,7 @@ import slide2 from "../../assets/Home_Page_Banners/slide2.webp";
 import slide3 from "../../assets/Home_Page_Banners/slide3.webp";
 import slide4 from "../../assets/Home_Page_Banners/slide4.webp";
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 
 // const SampleArrow = ({ className, style, onClick, icon: Icon }) => (
 //   <div
@@ -87,12 +88,16 @@ const HeroSection = () => {
                   {item.title}
                 </h1>
                 <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-                  <button className="hidden md:block md:w-auto text-black font-medium bg-[#fea116] px-8 md:px-14 py-3 md:py-4 hover:bg-[#e99015] transition-colors">
-                    Contact
-                  </button>
-                  <button className=" md:w-auto text-black font-medium bg-white px-8 md:px-14 py-3 md:py-4 hover:bg-gray-100 transition-colors">
-                    Know More
-                  </button>
+                  <Link to="/contact">
+                    <button className="hidden md:block md:w-auto text-black font-medium bg-[#fea116] px-8 md:px-14 py-3 md:py-4 hover:bg-[#e99015] transition-colors">
+                      Contact
+                    </button>
+                  </Link>
+                  <Link to="/about">
+                    <button className=" md:w-auto text-black font-medium bg-white px-8 md:px-14 py-3 md:py-4 hover:bg-gray-100 transition-colors">
+                      Know More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
