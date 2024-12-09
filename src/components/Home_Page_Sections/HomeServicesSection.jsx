@@ -10,17 +10,17 @@ const HomeServicesSection = () => {
 
   const array = [
     {
-      icon: <FaHotel />,
+      icon: <FaHotel className="fill-[#fea116]" />,
       serviceName: "AC / Non AC Rooms",
       desc: "Spacious AC and Non-AC rooms designed for comfort and relaxation",
     },
     {
-      icon: <FaWater />,
+      icon: <FaWater className="fill-[#fea116]" />,
       serviceName: "24/7 Hot water",
       desc: "Enjoy 24/7 hot water for a refreshing and convenient stay.",
     },
     {
-      icon: <FaTv />,
+      icon: <FaTv className="fill-[#fea116]" />,
       serviceName: "HD Television",
       desc: "HD televisions in every room for your entertainment needs.",
     },
@@ -45,26 +45,29 @@ const HomeServicesSection = () => {
 
       {/* Lower Section */}
       <section>
-        <div className="m-4 md:m-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 container mx-auto gap-5">
           {array.map((items, index) => (
             <div
               key={index}
-              className="bg-white p-5 shadow-lg rounded-lg h-72 flex flex-col justify-center gap-5 border-b-8 border-yellow-400 transition-all duration-300 ease-in hover:bg-[#fea116] hover:text-white group"
+              className="relative shadow-2xl flex items-center justify-center  border-black h-[30vh] overflow-hidden group"
             >
               {/* Icon */}
-              <div className="text-4xl text-[#FEA116] group-hover:text-white transition-colors duration-300 ease-in">
+              <div className="flex flex-col items-center gap-3 text-4xl">
                 {items.icon}
+                {/* Heading */}
+                <h1 className="text-lg text-center font-bold uppercase font-montserrat">
+                  {items.serviceName}
+                </h1>
               </div>
 
-              {/* Heading */}
-              <h1 className="text-xl font-bold font-montserrat group-hover:text-white transition-colors duration-300 ease-in">
-                {items.serviceName}
-              </h1>
+              {/* Text Content */}
+              <div className="absolute flex items-center inset-0 bg-[#fea116] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
+                <h1 className="relative z-10 text-base font-medium text-center p-5 text-white">
+                  {items.desc}
+                </h1>
+              </div>
 
-              {/* Description */}
-              <p className="text-gray-600 group-hover:text-white transition-colors duration-300 ease-in">
-                {items.desc}
-              </p>
+              
             </div>
           ))}
         </div>

@@ -6,8 +6,22 @@ import DeluxeNonACTripleRoom from "../SidebarComponent/DeluxeNonACTripleRoom";
 import DeluxeACTripleRoom from "../SidebarComponent/DeluxeACTripleRoom";
 import DeluxeNonACFourBedRoom from "../SidebarComponent/DeluxeNonACFourBedRoom";
 import DeluxeACFourBedRoom from "../SidebarComponent/DeluxeACFourBedRoom";
+import galleryImg1 from "../../assets/gallery images/1.webp";
+import galleryImg2 from "../../assets/gallery images/2.webp";
+import galleryImg3 from "../../assets/gallery images/3.webp";
+import galleryImg4 from "../../assets/gallery images/4.webp";
+import galleryImg5 from "../../assets/gallery images/5.webp";
+import galleryImg6 from "../../assets/gallery images/6.webp";
 
 const Rooms = () => {
+ const images = [
+   { img: galleryImg1 },
+   { img: galleryImg2 },
+   { img: galleryImg3 },
+   { img: galleryImg4 },
+   { img: galleryImg5 },
+   { img: galleryImg6 },
+ ];
   const array = [
     {
       navMain: "Deluxe Double Non-AC Room",
@@ -72,7 +86,7 @@ const Rooms = () => {
   // ];
 
   return (
-    <main className="container mx-auto flex flex-col lg:flex-row gap-6 px-4 mt-10">
+    <main className="container mx-auto flex flex-col-reverse md:flex-col  lg:flex-row gap-6 px-4 mt-10">
       {/* Main Content Section */}
       <section className="lg:w-2/3 w-full p-4">
         <h1 className="text-2xl font-bold font-montserrat mb-4">
@@ -98,6 +112,19 @@ const Rooms = () => {
             </li>
           ))}
         </ul>
+        <section className="mt-6 hidden lg:block ">
+          <div className="grid grid-cols-2 gap-4">
+            {images.map((item, index) => (
+              <div key={index} className="rounded overflow-hidden">
+                <img
+                  src={item.img}
+                  alt={`Gallery Image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
       </section>
     </main>
   );
