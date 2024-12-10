@@ -45,20 +45,21 @@ const Home_Places = () => {
       data: [
         { name: "Koramangala", distance: "2.1KM", time: "9min" },
         { name: "Silk Board", distance: "2.9KM", time: "11min" },
-        { name: "Madiwala", distance: "1.9KM", time: "8min" },
+        { name: "Madiwala", distance: "100M", time: "8min" },
       ],
     },
     {
       category: "Hospital",
       icon: <FaHospital className="text-[#FEA116] text-2xl" />,
-      data: [{ name: "Koramangala", distance: "2.1KM", time: "9min" }],
+      data: [{ name: "St John's Hospital", distance: "500M", time: "5min" }],
     },
     {
       category: "Others",
       icon: <FaUserGraduate className="text-[#FEA116] text-2xl" />,
       data: [
-        { name: "Christ College", distance: "2.1KM", time: "9min" },
-        { name: "BTM", distance: "1KM", time: "4min" },
+        { name: "Christ College", distance: "1KM", time: "9min" },
+        { name: "Jyoti Nivas College", distance: "1KM", time: "9min" },
+        { name: "BTM", distance: "500M", time: "4min" },
       ],
     },
   ];
@@ -95,7 +96,7 @@ const Home_Places = () => {
             {places.map((place) => (
               <React.Fragment key={place.category}>
                 <tr className="bg-gray-100">
-                  <td className="py-4 px-4 font-bold flex items-center gap-2 text-lg">
+                  <td className="py-4 px-4 font-bold text-black flex items-center gap-2 text-lg">
                     {place.icon}
                     {place.category}
                   </td>
