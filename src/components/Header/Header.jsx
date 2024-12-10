@@ -23,13 +23,7 @@ const Header = () => {
         <div className="container mx-auto">
           <div className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 sm:space-x-4">
             <div className="flex items-center justify-center sm:justify-start space-x-2">
-              <FaMobileAlt className="text-gray-600" />
-              <a
-                href="tel:9019336365"
-                className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
-              >
-                +91 90193 36365
-              </a>
+              
                 <FaMobileAlt className="text-gray-600" />
               <a
                 href="tel:9972014954"

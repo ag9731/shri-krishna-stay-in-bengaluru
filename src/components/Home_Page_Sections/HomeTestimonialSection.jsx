@@ -11,7 +11,7 @@ const TestimonialCarousel = () => {
       name: "Rakesh",
       profession: "Chennai",
       review:
-        "Amazing service and support. I highly recommend this company! The staff was friendly and very accommodating. The overall experience was seamless and exceeded my expectations.",
+        "Comfortable and clean rooms with a peaceful ambiance. The staff is very polite and ensures all your needs are met. Great value for money in the heart of Bangalore!",
     },
     {
       image:
@@ -19,7 +19,7 @@ const TestimonialCarousel = () => {
       name: "Paramesh",
       profession: "Kerala",
       review:
-        "The team was extremely helpful and professional. Great work! The attention to detail in their service was remarkable. I would definitely return for future projects.",
+        "Krishna stay Inn was amazing with top-notch customer service. Rooms are well-maintained, and the location is very convenient for city exploration. Would definitely visit again!",
     },
     {
       image:
@@ -27,7 +27,7 @@ const TestimonialCarousel = () => {
       name: "Rashmi",
       profession: "Andra Pradesh",
       review:
-        "They exceeded my expectations in every way. Thank you! The communication throughout the process was excellent. I am truly impressed by their dedication and effort.",
+        "Krishna Stay Inn offers excellent hospitality with cozy, well-kept rooms. The staff is always ready to help, making the experience smooth and enjoyable. Highly recommended for travelers!",
     },
     {
       image:
@@ -35,7 +35,7 @@ const TestimonialCarousel = () => {
       name: "Jahnavi",
       profession: "Hubli",
       review:
-        "Great experience. Would definitely recommend to others. The service quality was top-notch, and the team was very approachable. I felt valued as a customer throughout the process.",
+        "Krishna Stay Inn provides a homely vibe with clean and spacious rooms. The staff is courteous and ensures a seamless experience. A great place for a comfortable stay in Bangalore!",
     },
   ];
 

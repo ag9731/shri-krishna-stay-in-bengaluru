@@ -1,5 +1,12 @@
 import React from "react";
-import { FaPlane, FaSubway, FaTrain, FaBus } from "react-icons/fa";
+import {
+  FaPlane,
+  FaSubway,
+  FaTrain,
+  FaBus,
+  FaHospital,
+  FaUserGraduate,
+} from "react-icons/fa";
 
 const Home_Places = () => {
   const places = [
@@ -39,6 +46,19 @@ const Home_Places = () => {
         { name: "Koramangala", distance: "2.1KM", time: "9min" },
         { name: "Silk Board", distance: "2.9KM", time: "11min" },
         { name: "Madiwala", distance: "1.9KM", time: "8min" },
+      ],
+    },
+    {
+      category: "Hospital",
+      icon: <FaHospital className="text-[#FEA116] text-2xl" />,
+      data: [{ name: "Koramangala", distance: "2.1KM", time: "9min" }],
+    },
+    {
+      category: "Others",
+      icon: <FaUserGraduate className="text-[#FEA116] text-2xl" />,
+      data: [
+        { name: "Christ College", distance: "2.1KM", time: "9min" },
+        { name: "BTM", distance: "1KM", time: "4min" },
       ],
     },
   ];
