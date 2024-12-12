@@ -70,10 +70,10 @@ const HomeContactUsSection = () => {
               Mail
             </h2>
             <a
-              href="mailto:srikrishnastay@gmail.com"
+              href="mailto:krishnastayinn@gmail.com"
               className="text-gray-600 text-sm sm:text-base hover:text-yellow-500 transition-colors"
             >
-              srikrishnastay@gmail.com
+              krishnastayinn@gmail.com
             </a>
           </div>
         </div>

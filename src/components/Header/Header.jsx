@@ -35,10 +35,10 @@ const Header = () => {
             <div className="flex items-center justify-center sm:justify-start space-x-2">
               <FaEnvelope className="text-gray-600" />
               <a
-                href="mailto:srikrishnastay@gmail.com"
+                href="mailto:krishnastayinn@gmail.com"
                 className="font-medium text-sm sm:text-base text-gray-600 hover:text-blue-500"
               >
-                srikrishnastay@gmail.com
+                krishnastayinn@gmail.com
               </a>
             </div>
 
